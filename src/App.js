@@ -1,9 +1,10 @@
 import './App.css';
+import Ip from './Ip';
 
 function App() {
   return (
     <div className="App">
-      App
+      <Ip />
     </div>
   );
 }
