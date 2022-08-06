@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/whats_my_ip/static/css/main.abd64e84.css",
-    "main.js": "/whats_my_ip/static/js/main.ea1d1138.js",
+    "main.css": "/whats_my_ip/static/css/main.b89b1aa8.css",
+    "main.js": "/whats_my_ip/static/js/main.0cf79963.js",
     "index.html": "/whats_my_ip/index.html",
-    "main.abd64e84.css.map": "/whats_my_ip/static/css/main.abd64e84.css.map",
-    "main.ea1d1138.js.map": "/whats_my_ip/static/js/main.ea1d1138.js.map"
+    "main.b89b1aa8.css.map": "/whats_my_ip/static/css/main.b89b1aa8.css.map",
+    "main.0cf79963.js.map": "/whats_my_ip/static/js/main.0cf79963.js.map"
   },
   "entrypoints": [
-    "static/css/main.abd64e84.css",
-    "static/js/main.ea1d1138.js"
+    "static/css/main.b89b1aa8.css",
+    "static/js/main.0cf79963.js"
   ]
 }
