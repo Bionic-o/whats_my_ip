@@ -4,7 +4,7 @@ import CountryData from './CountryData';
 
 function Ip() {
     const [isLoading, setIsLoading] = useState('true');
-    const [ipData, setIpData] = useState([]);
+    const [ipData, setIpData] = useState(false);
 
     const getData = async () => {
         setIsLoading(true)
@@ -22,7 +22,11 @@ function Ip() {
         getData()
     }, [])
 
-    console.log(ipData.location.country)
+    if (!ipData) {
+        return (
+            <div>loading...</div>
+        )
+    }
 
   return (
     <div>

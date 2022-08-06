@@ -26,7 +26,6 @@ function CountryData({countryCode}) {
         const result = await response.json()
         console.log(result.data.country || [])
         setCountries( (result.data.country || [] ))
-        console.log(countries)
       }
 
       useEffect(() => {
