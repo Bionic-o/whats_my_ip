@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react"
 import CountryData from './CountryData';
+import MapLocation from './MapLocation';
 
 function Ip() {
     const [isLoading, setIsLoading] = useState('true');
@@ -32,6 +33,7 @@ function Ip() {
     <div>
         {ipData.ip}
         <CountryData countryCode={ipData.location.country}/>
+        <MapLocation lattitude={ipData.location.lat} longitude={ipData.location.lng}/>
     </div>
   )
 }
@@ -41,3 +43,4 @@ export default Ip
 //https://geo.ipify.org/api/v2/country,city,vpn?apiKey=${process.env.REACT_APP_API_KEY}&ipAddress=8.8.8.8
 
 // setFilter(ipData.location.country)
+
