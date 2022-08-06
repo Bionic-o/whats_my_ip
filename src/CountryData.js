@@ -34,9 +34,7 @@ function CountryData({countryCode}) {
 
   return (
     <div>
-        <p>{countries.name}</p>
-        <p>{countries.code}</p>
-        <p>{countries.capital}</p>
+        <p>You are currently located in {countries.name}</p>
     </div>
   )
 }

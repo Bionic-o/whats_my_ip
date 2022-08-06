@@ -6,9 +6,9 @@ function MapLocation({lattitude, longitude}) {
 
   return (
     <div>
-        <div>
-        <Map height={300} defaultCenter={[lattitude, longitude]} defaultZoom={11}>
-        <Marker width={50} anchor={[lattitude, longitude]} />
+        <div className="map">
+        <Map height={600} defaultCenter={[lattitude, longitude]} defaultZoom={11}>
+        <Marker width={70} anchor={[lattitude, longitude]} />
         </Map>
         </div>
     </div>

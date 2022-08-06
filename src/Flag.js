@@ -2,11 +2,11 @@ import React from 'react'
 
 function Flag({flag}) {
 
-    const source = `https://flagcdn.com/w20/${flag}.png`
-    const sourceset = `https://flagcdn.com/w40/${flag}.png 2x`
+    const source = `https://flagcdn.com/w320/${flag}.png`
+    const sourceset = `https://flagcdn.com/w640/${flag}.png 2x`
     const alternative = flag.name
   return (
-    <div>
+    <div className="flag">
         <img
             src={source}
             srcset={sourceset}

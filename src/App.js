@@ -3,9 +3,11 @@ import Ip from './Ip';
 
 function App() {
   return (
-    <div className="App">
-      <Ip />
-    </div>
+    <main>
+      <section className="container">
+        <Ip />
+      </section>
+    </main>
   );
 }
 
