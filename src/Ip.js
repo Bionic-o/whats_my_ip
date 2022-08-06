@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import CountryData from './CountryData';
 import MapLocation from './MapLocation';
 import Flag from './Flag';
+import { BsCalendar2CheckFill, BsFillClockFill } from 'react-icons/bs'
 
 function Ip() {
     const [isLoading, setIsLoading] = useState('true');
@@ -34,6 +35,18 @@ function Ip() {
     console.log(DateTime.now().toLocaleString())
     console.log(DateTime.TIME_24_SIMPLE.toLocaleString())
 
+
+const milliseconds = DateTime.now().diff(DateTime.local(1982, 5, 25)).milliseconds;
+const minutes = Math.floor((milliseconds / 1000 / 60) % 60);
+const hours = Math.floor((milliseconds / 1000 / 60 / 60) % 24);
+
+ const formattedTime = [
+    hours.toString().padStart(2, "0"),
+    minutes.toString().padStart(2, "0"),
+].join(":");
+
+console.log(formattedTime); // 21:12:09
+
   return (
     <div>
         <h1 className="header">What's my IP?</h1>
@@ -47,9 +60,9 @@ function Ip() {
                     </div>
                     <hr></hr>
                     <div>
-                        <p>{DateTime.now().toLocaleString()}</p>
-                        <p>{DateTime.now().diff(DateTime.local(1982, 5, 25)).milliseconds}</p>
-                        <p>{DateTime.now().toLocaleTimeString('en-EU')}</p>
+                        <p><BsCalendar2CheckFill /> {DateTime.now().toLocaleString()}</p>
+                        <p><BsFillClockFill /> {formattedTime}</p>
+                        <p>{}</p>
                     </div>
                 </div>
             </div>
