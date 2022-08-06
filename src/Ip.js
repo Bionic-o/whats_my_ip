@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react"
 import CountryData from './CountryData';
 import MapLocation from './MapLocation';
+import Flag from './Flag';
 
 function Ip() {
     const [isLoading, setIsLoading] = useState('true');
@@ -34,6 +35,7 @@ function Ip() {
         {ipData.ip}
         <CountryData countryCode={ipData.location.country}/>
         <MapLocation lattitude={ipData.location.lat} longitude={ipData.location.lng}/>
+        <Flag flag={ipData.location.country.toLowerCase()}/>
     </div>
   )
 }
